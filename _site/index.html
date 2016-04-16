@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Slate Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="themes/cayman/stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="themes/cayman/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="themes/cayman/stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="themes/cayman/stylesheets/lang.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Slate Kit</h1>
+      <h2 class="project-tagline">A scala utility library and tool kit</h2>
+      <a href="https://github.com/kishorereddy/scala-slate" class="btn">View on GitHub</a>
+      <a href="https://github.com/kishorereddy/scala-slate/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/kishorereddy/scala-slate/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+		<h1 id="slate">Slate</h1>
+<hr />
+<p>Slate-Source is a simple, and very useful micro-framework and utility library built in Scala. It provides the technical foundation to quickly build Scala apps. Save time and effort on technical infrastructure so you can focus on building the business features of your product or start-up. Slate is built on the concept of using modular, re-usable code and components to get your apps developed, and rolled out to users as quickly as possible.</p>
+
+<p><a href="http://github.com/kishorereddy/scala-slate">http://github.com/kishorereddy/scala-slate</a></p>
+
+<h2 id="approach">Approach</h2>
+<p>Slate solves some very common problems in the technology area:</p>
+
+<h2 id="goals">Goals</h2>
+<p>Slate solves some very common problems in the technology area:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/window.png" alt="RAD" /></td>
+      <td>Rapidly create scala apps and prototypes</td>
+    </tr>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/business-bag.png" alt="RAD" /></td>
+      <td>Focus on business features, not technology needs</td>
+    </tr>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/cloud-upload.png" alt="RAD" /></td>
+      <td>Support for cloud services ( Amazon S3, SQS )</td>
+    </tr>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/chat.png" alt="RAD" /></td>
+      <td>Build a community for further improvement and feedback</td>
+    </tr>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/dollar.png" alt="RAD" /></td>
+      <td>Reduce costs of development</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--|![RAD](https://raw.githubusercontent.com/kishorereddy/scala-slate/gh-pages/images/app/file-text.png) | Well documented apis and components |-->
+
+<hr />
+
+<h1 id="library">Library</h1>
+<p>The Slate Source core library offers several modules in the core library. These modules represent re-usable code and components that can be used in any type of application.</p>
+
+<h2 id="all">All</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong><a href="mod-args.html">Args</a></strong></td>
+      <td>A lexical arguments/options parser for command line parsing and more</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-auth.html">Auth</a></strong></td>
+      <td>Simple authorization component for both desktop and concurrency based apps</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-api.html">Api</a></strong></td>
+      <td>A mini api container to easily built and host protocol independent apis that can be used in the web or command line</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-app.html">App</a></strong></td>
+      <td>A robust application template with built-in support for command line args, environments, logging, configs and more</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-cmd.html">Cmd</a></strong></td>
+      <td>A robust implementation of the command pattern</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-csv.html">Csv</a></strong></td>
+      <td>A csv lexical parser for reading any type of csv files</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-data.html">Data</a></strong></td>
+      <td>A collection of database related functions</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-entities.html">Entities</a></strong></td>
+      <td>A micro-framework and ORM for managing your data models</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-aws-s3.html">Files</a></strong></td>
+      <td>A light-weight abstraction over file storage with support for Amazon S3</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-lex.html">Lex</a></strong></td>
+      <td>A lexical parser that can be extended</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-logger.html">Logger</a></strong></td>
+      <td>A simple logger that can be extended with 3rd party logging software</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-model.html">Model</a></strong></td>
+      <td>A component to easily build up schema for some data model</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-mapper.html">Mapper</a></strong></td>
+      <td>Maps data from 1 source to another source</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-query.html">Query</a></strong></td>
+      <td>Construct your own query object model for handling queries</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-aws-sqs.html">Queue</a></strong></td>
+      <td>A light-weight abstraction over messaging with support Amazon SQS</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-reflect.html">Reflect</a></strong></td>
+      <td>Convenience wrapper around reflection in Scala</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-shell.html">Shell</a></strong></td>
+      <td>A command line shell for your services</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-tasks.html">Tasks</a></strong></td>
+      <td>A component to easily build batch, background or continuously running jobs</td>
+    </tr>
+    <tr>
+      <td><strong><a href="mod-utils.html">Utils</a></strong></td>
+      <td>More than a dozen plus utilities and more</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>desc</strong></td>
+      <td>A lexical arguments/options parser for command line parsing and more</td>
+    </tr>
+    <tr>
+      <td><strong>date</strong></td>
+      <td>2016-3-25 10:56:53</td>
+    </tr>
+    <tr>
+      <td><strong>version</strong></td>
+      <td>0.9.1</td>
+    </tr>
+    <tr>
+      <td><strong>namespace</strong></td>
+      <td>slate.common.args</td>
+    </tr>
+    <tr>
+      <td><strong>core source</strong></td>
+      <td>slate.common.args.Args</td>
+    </tr>
+    <tr>
+      <td><strong>example</strong></td>
+      <td><a href="https://github.com/kishorereddy/scala-slate/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Args.scala">Example_Args</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> 
+    <span class="c1">// Use case 1: Defaults e..g prefix = "-", sep = ":"
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"-env:dev -text:'hello word' -batch:10"</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 2: Custom prefix and sep e.g. "!" and separator "="
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"!env=dev !text='hello word' !batch=10 "</span><span class="o">,</span> <span class="n">prefix</span> <span class="k">=</span> <span class="s">"!"</span><span class="o">,</span> <span class="n">sep</span> <span class="k">=</span> <span class="s">"="</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 3a: Check for method call in the beginning
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"service.method -env=dev -text='hello word' -batch=10"</span><span class="o">,</span> <span class="n">prefix</span> <span class="k">=</span> <span class="s">"-"</span><span class="o">,</span>
+                 <span class="n">sep</span> <span class="k">=</span> <span class="s">"="</span><span class="o">,</span> <span class="n">hasAction</span> <span class="k">=</span> <span class="kc">true</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 3b: Check for method call in the beginning
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"method -env=dev -text='hello word' -batch=10"</span><span class="o">,</span> <span class="n">prefix</span> <span class="k">=</span> <span class="s">"-"</span><span class="o">,</span>
+                 <span class="n">sep</span> <span class="k">=</span> <span class="s">"="</span><span class="o">,</span> <span class="n">hasAction</span> <span class="k">=</span> <span class="kc">true</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 4: No args
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"service.method"</span><span class="o">,</span> <span class="n">prefix</span> <span class="k">=</span> <span class="s">"-"</span><span class="o">,</span> <span class="n">sep</span> <span class="k">=</span> <span class="s">"="</span><span class="o">,</span> <span class="n">hasAction</span> <span class="k">=</span> <span class="kc">true</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 5a: Help request ( "?", "help")
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"?"</span>         <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 5b: Help request with method call ( "method.action" ? )
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"service.method help"</span>   <span class="o">,</span> <span class="n">hasAction</span> <span class="k">=</span> <span class="kc">true</span> <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 6: Version request ( "ver", "version" )
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"version"</span>  <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 7: Exit request
+</span>    <span class="n">showResults</span><span class="o">(</span> <span class="nc">Args</span><span class="o">.</span><span class="n">parse</span><span class="o">(</span> <span class="s">"exit"</span>     <span class="o">)</span> <span class="o">)</span>
+
+    <span class="c1">// Use case 8: apply args to an object
+</span>    <span class="nc">Args</span><span class="o">.</span><span class="n">apply</span><span class="o">(</span> <span class="s">"-env:dev -text:'hello word' -batch:10"</span><span class="o">,</span> <span class="k">new</span> <span class="nc">SampleOptions</span><span class="o">(),</span> <span class="s">"-"</span><span class="o">,</span> <span class="s">":"</span><span class="o">,</span> <span class="kc">true</span><span class="o">)</span>
+    
+
+</code></pre>
+</div>
+
+<h1 id="support">Support</h1>
+<p>Feel free to contact us for more info. Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out. Please feel free to post git issues, fork the code and submit patches. For any further and dedicated support, please contact us for details.
+There is a lot of documentation available for each component. The docs are available in the form of boths detailed docs and examples.</p>
+
+<h2 id="docs">Docs</h2>
+<p>Check out the wiki for information on releases, downloads, components available, links, support, examples and much more.
+There is a dedicated area that contains several detailed examples of using the components in the apps\examples folder. You can check out the wiki and source code here for more info.</p>
+
+<h2 id="authors">Authors</h2>
+<p>Kishore Reddy ( @kishorereddy ) is the author of Slate-Source. Feel free to contact Kishore for any questions. @kishorereddy is an software architecht, artist and open-source developer living and working in the New York City Area. For the last 10+ years, Kishore has focused on various technologies ranging from Java, C#, Python, Sql-Server, MySql, AWS, Azure, DSL ( Domain Specific Languages ) and Language Implementation. For the last 2-3 years, Kishore has focused mostly on Scala, working in server side, and mobile areas.</p>
+
+<h1 id="modules">Modules</h1>
+<p>Slate offers several modules in the core library. These modules represent re-usable code and components that can be used in any type of application.</p>
+
+<h2 id="api">Api</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="app">App</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="batch">Batch</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="cloud">Cloud</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="orm">ORM</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="job">Job</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="shell">Shell</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="server">Server</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+<h2 id="ui">UI</h2>
+<p>This is a listing all the components available in the Slate Source core library.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/kishorereddy/scala-slate">Slate Kit</a> is maintained by <a href="https://github.com/kishorereddy">kishorereddy</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>  
+  </body>
+</html>
