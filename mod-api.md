@@ -8,11 +8,11 @@ permalink: /mod-api
 
 |:--|:--|
 | **desc** | A protocol agnostic api approach to make apis available on command line or web | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.core.apis.ApiRunner  |
-| **example** | [Example_Api](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Api.scala) |
+| **namespace** | slate.core.apis  |
+| **source** | slate.core.apis.ApiRunner  |
+| **example** | [Example_Api](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Api.scala) |
 
 ## Import
 ```scala 

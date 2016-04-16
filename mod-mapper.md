@@ -8,33 +8,33 @@ permalink: /mod-mapper
 
 |:--|:--|
 | **desc** | A simple auth component for desktop/local and web/concurrent apps | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.common.mapper.Mapper  |
-| **example** | [Example_Mapper](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Mapper.scala) |
+| **namespace** | slate.common.mapper  |
+| **source** | slate.common.mapper.Mapper  |
+| **example** | [Example_Mapper](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Mapper.scala) |
 
 ## Import
 ```scala 
 // required 
-documentation coming soon
+coming soon
 
 // optional 
-documentation coming soon
+coming soon
 
 ```
 
 ## Setup
 ```scala
 
-documentation coming soon
+coming soon
 
 ```
 
 ## Usage
 ```scala
 
-documentation coming soon
+coming soon
 
 ```
 

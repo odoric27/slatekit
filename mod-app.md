@@ -8,11 +8,11 @@ permalink: /mod-app
 
 |:--|:--|
 | **desc** | A base application with support for logging, config, status and more | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.core.app.AppProcess  |
-| **example** | [Example_App](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_App.scala) |
+| **namespace** | slate.core.app  |
+| **source** | slate.core.app.AppProcess  |
+| **example** | [Example_App](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_App.scala) |
 
 ## Import
 ```scala 
