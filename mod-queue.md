@@ -1,5 +1,5 @@
 ---
-layout: cayman_page
+layout: start_page
 title: module Queue
 permalink: /mod-queue
 ---

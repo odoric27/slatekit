@@ -1,5 +1,5 @@
 ---
-layout: cayman_page
+layout: start_page
 title: module Mapper
 permalink: /mod-mapper
 ---

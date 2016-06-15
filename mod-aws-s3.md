@@ -1,5 +1,5 @@
 ---
-layout: cayman_page
+layout: start_page
 title: module AWS-S3
 permalink: /mod-aws-s3
 ---

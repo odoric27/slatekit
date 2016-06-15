@@ -1,5 +1,5 @@
 ---
-layout: cayman_page
+layout: start_home_page
 title: Slate Kit
 permalink: /index
 ---
