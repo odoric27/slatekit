@@ -8,11 +8,11 @@ permalink: /mod-aws-sqs
 
 |:--|:--|
 | **desc** | Abstraction layer on message queues using Amazon SQS | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.cloud.aws.AwsCloudQueue  |
-| **example** | [Example_Aws_Sqs](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Aws_Sqs.scala) |
+| **namespace** | slate.cloud.aws  |
+| **source** | slate.cloud.aws.AwsCloudQueue  |
+| **example** | [Example_Aws_Sqs](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Aws_Sqs.scala) |
 
 ## Import
 ```scala 

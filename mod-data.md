@@ -8,33 +8,33 @@ permalink: /mod-data
 
 |:--|:--|
 | **desc** | Database access library using JDBC for MySql and SqlServer | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.core.databases.Db  |
-| **example** | [Example_Database](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Database.scala) |
+| **namespace** | slate.core.databases  |
+| **source** | slate.core.databases.Db  |
+| **example** | [Example_Database](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Database.scala) |
 
 ## Import
 ```scala 
 // required 
-documentation coming soon
+coming soon
 
 // optional 
-documentation coming soon
+coming soon
 
 ```
 
 ## Setup
 ```scala
 
-documentation coming soon
+coming soon
 
 ```
 
 ## Usage
 ```scala
 
-documentation coming soon
+coming soon
 
 ```
 

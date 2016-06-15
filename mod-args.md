@@ -8,11 +8,11 @@ permalink: /mod-args
 
 |:--|:--|
 | **desc** | A lexical arguments/options parser for command line parsing and more | 
-| **date**| 2016-4-15 3:59:25 |
+| **date**| 2016-4-16 0:24:10 |
 | **version** | 0.9.1  |
-| **namespace** |   |
-| **core source** | slate.common.args.Args  |
-| **example** | [Example_Args](https://github.com/kishorereddy/blend-server/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Args.scala) |
+| **namespace** | slate.common.args  |
+| **source** | slate.common.args.Args  |
+| **example** | [Example_Args](https://github.com/code-helix/slatekit/blob/master/src/apps/scala/slate-examples/src/main/scala/slate/examples/Example_Args.scala) |
 
 ## Import
 ```scala 
