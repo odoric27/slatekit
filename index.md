@@ -30,7 +30,7 @@ Slate solves some very common problems in the technology area:
 
 ---
 
-# Library
+# Library 2
 The Slate Source core library offers several modules in the core library. These modules represent re-usable code and components that can be used in any type of application.
 
 ## All
