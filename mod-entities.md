@@ -8,7 +8,7 @@ permalink: /mod-entities
 
 |:--|:--|
 | **desc** | A light-weight ORM for persisting entities | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.common.entities  |
 | **source** | slate.common.entities.Entity  |

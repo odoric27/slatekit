@@ -8,7 +8,7 @@ permalink: /mod-model
 
 |:--|:--|
 | **desc** | Allows construction of model schema with fields | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.common  |
 | **source** | slate.common.Model  |

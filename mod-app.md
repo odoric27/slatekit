@@ -8,7 +8,7 @@ permalink: /mod-app
 
 |:--|:--|
 | **desc** | A base application with support for logging, config, status and more | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.core.app  |
 | **source** | slate.core.app.AppProcess  |
@@ -17,6 +17,8 @@ permalink: /mod-app
 ## Import
 ```scala 
 // required 
+
+import slate.common.info.{StartInfo, About}
 import slate.core.app.{AppProcess, AppRunner}
 
 
@@ -41,12 +43,15 @@ import scala.collection.mutable.ListBuffer
     override def init(): Unit =
     {
       // Initialize info about this app
-      meta.name = "sampleapp"
-      meta.desc = "sample app to show the appprocess base class, template methods, and functionality"
-      meta.region = "usa.ny"
-      meta.env = Env.DEV
-      meta.version = "1.0.0.3"
-      meta.log = "{@app}-{@env}-{@date}.log"
+      meta.about = new About(
+        name = "sampleapp",
+        desc = "sample app to show the appprocess base class, template methods, and functionality",
+        region = "usa.ny",
+        version = "1.0.0.3",
+        tags = "slate,example,app"
+      )
+      //meta.env = Env.DEV
+      //meta.log = "{@app}-{@env}-{@date}.log"
 
       // Set some options
 
@@ -72,8 +77,8 @@ import scala.collection.mutable.ListBuffer
       if(args.isEmpty)
         return
 
-      meta.env = args.get(0)
-      meta.region = args.get(1)
+      //meta.env = args.get(0)
+      //meta.region = args.get(1)
 
       log.info("app configured with env(dev,qa,uat,prod) and region(usa.ny) etc... ")
     }
@@ -107,8 +112,8 @@ import scala.collection.mutable.ListBuffer
 
     override def collectSummaryExtra(args:ListBuffer[String]): Unit =
     {
-      args += (meta.name + ": extra 1  = extra summary data1")
-      args += (meta.name + ": extra 2  = extra summary data2")
+      args += (meta.about.name + ": extra 1  = extra summary data1")
+      args += (meta.about.name + ": extra 2  = extra summary data2")
     }
   }
   

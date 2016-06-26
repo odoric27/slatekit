@@ -8,7 +8,7 @@ permalink: /mod-reflect
 
 |:--|:--|
 | **desc** | Reflection helper for Scala | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.common  |
 | **source** | slate.common.Reflect  |

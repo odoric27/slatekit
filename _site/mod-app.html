@@ -73,12 +73,6 @@
             </div>
 			</div>
 		</footer>
-        
-        <section id="features" class="section section-center section-hilite section-features">
-          <div class="container">
-            
-          </div>
-        </section>
 		
 		<section id="codeExample" class="section" >
 			<div class="container">
@@ -92,7 +86,7 @@
     </tr>
     <tr>
       <td><strong>date</strong></td>
-      <td>2016-4-16 0:24:10</td>
+      <td>2016-6-26 2:14:42</td>
     </tr>
     <tr>
       <td><strong>version</strong></td>
@@ -115,7 +109,9 @@
 
 <h2 id="import">Import</h2>
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// required 
-</span><span class="k">import</span> <span class="nn">slate.core.app.</span><span class="o">{</span><span class="nc">AppProcess</span><span class="o">,</span> <span class="nc">AppRunner</span><span class="o">}</span>
+</span>
+<span class="k">import</span> <span class="nn">slate.common.info.</span><span class="o">{</span><span class="nc">StartInfo</span><span class="o">,</span> <span class="nc">About</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">slate.core.app.</span><span class="o">{</span><span class="nc">AppProcess</span><span class="o">,</span> <span class="nc">AppRunner</span><span class="o">}</span>
 
 
 <span class="c1">// optional 
@@ -139,13 +135,16 @@
     <span class="k">override</span> <span class="k">def</span> <span class="n">init</span><span class="o">()</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span>
     <span class="o">{</span>
       <span class="c1">// Initialize info about this app
-</span>      <span class="n">meta</span><span class="o">.</span><span class="n">name</span> <span class="k">=</span> <span class="s">"sampleapp"</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">desc</span> <span class="k">=</span> <span class="s">"sample app to show the appprocess base class, template methods, and functionality"</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">region</span> <span class="k">=</span> <span class="s">"usa.ny"</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">env</span> <span class="k">=</span> <span class="nc">Env</span><span class="o">.</span><span class="nc">DEV</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">version</span> <span class="k">=</span> <span class="s">"1.0.0.3"</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">log</span> <span class="k">=</span> <span class="s">"{@app}-{@env}-{@date}.log"</span>
-
+</span>      <span class="n">meta</span><span class="o">.</span><span class="n">about</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">About</span><span class="o">(</span>
+        <span class="n">name</span> <span class="k">=</span> <span class="s">"sampleapp"</span><span class="o">,</span>
+        <span class="n">desc</span> <span class="k">=</span> <span class="s">"sample app to show the appprocess base class, template methods, and functionality"</span><span class="o">,</span>
+        <span class="n">region</span> <span class="k">=</span> <span class="s">"usa.ny"</span><span class="o">,</span>
+        <span class="n">version</span> <span class="k">=</span> <span class="s">"1.0.0.3"</span><span class="o">,</span>
+        <span class="n">tags</span> <span class="k">=</span> <span class="s">"slate,example,app"</span>
+      <span class="o">)</span>
+      <span class="c1">//meta.env = Env.DEV
+</span>      <span class="c1">//meta.log = "{@app}-{@env}-{@date}.log"
+</span>
       <span class="c1">// Set some options
 </span>
       <span class="c1">// 1. Prints a summary of the all the metadata and
@@ -170,9 +169,9 @@
       <span class="k">if</span><span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="n">isEmpty</span><span class="o">)</span>
         <span class="k">return</span>
 
-      <span class="n">meta</span><span class="o">.</span><span class="n">env</span> <span class="k">=</span> <span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
-      <span class="n">meta</span><span class="o">.</span><span class="n">region</span> <span class="k">=</span> <span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
-
+      <span class="c1">//meta.env = args.get(0)
+</span>      <span class="c1">//meta.region = args.get(1)
+</span>
       <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="o">(</span><span class="s">"app configured with env(dev,qa,uat,prod) and region(usa.ny) etc... "</span><span class="o">)</span>
     <span class="o">}</span>
 
@@ -205,8 +204,8 @@
 
     <span class="k">override</span> <span class="k">def</span> <span class="n">collectSummaryExtra</span><span class="o">(</span><span class="n">args</span><span class="k">:</span><span class="kt">ListBuffer</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span>
     <span class="o">{</span>
-      <span class="n">args</span> <span class="o">+=</span> <span class="o">(</span><span class="n">meta</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s">": extra 1  = extra summary data1"</span><span class="o">)</span>
-      <span class="n">args</span> <span class="o">+=</span> <span class="o">(</span><span class="n">meta</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s">": extra 2  = extra summary data2"</span><span class="o">)</span>
+      <span class="n">args</span> <span class="o">+=</span> <span class="o">(</span><span class="n">meta</span><span class="o">.</span><span class="n">about</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s">": extra 1  = extra summary data1"</span><span class="o">)</span>
+      <span class="n">args</span> <span class="o">+=</span> <span class="o">(</span><span class="n">meta</span><span class="o">.</span><span class="n">about</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s">": extra 2  = extra summary data2"</span><span class="o">)</span>
     <span class="o">}</span>
   <span class="o">}</span>
   
@@ -310,26 +309,6 @@
                   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                   <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                 </ul>
-              </aside>
-
-            </div>
-          </div>
-
-          <div id="sidebar-footer-2">
-            <div class="row">
-
-              <aside class="widget col-sm-6">
-                <h5 class="widget-title">Latest Tweet</h5>
-                <div class="tweet">
-                  It is better to be hated for what you are than to be loved for something you are not.<br />– Andre Gide –
-                </div>
-              </aside>
-
-              <aside class="widget widget_flickr col-sm-6">
-                <h5 class="widget-title">Latest Photos</h5>
-                <a href="#" class="hover-effect"><img src="http://placehold.it/100x100" /><span class="overlay"><i class="fa fa-plus"></i></span></a>
-                <a href="#" class="hover-effect"><img src="http://placehold.it/100x100" /><span class="overlay"><i class="fa fa-plus"></i></span></a>
-                <a href="#" class="hover-effect"><img src="http://placehold.it/100x100" /><span class="overlay"><i class="fa fa-plus"></i></span></a>
               </aside>
 
             </div>

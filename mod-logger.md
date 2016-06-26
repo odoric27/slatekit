@@ -8,7 +8,7 @@ permalink: /mod-logger
 
 |:--|:--|
 | **desc** | A simple logger with extensibility for using other 3rd party loggers | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.common.logging  |
 | **source** | slate.common.logging.Logger  |

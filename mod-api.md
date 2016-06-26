@@ -8,7 +8,7 @@ permalink: /mod-api
 
 |:--|:--|
 | **desc** | A protocol agnostic api approach to make apis available on command line or web | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.core.apis  |
 | **source** | slate.core.apis.ApiRunner  |
@@ -22,7 +22,7 @@ import scala.reflect.runtime.universe.typeOf
 
 
 // optional 
-import slate.common.OperationResult
+import slate.common.Result
 import slate.core.cmds.Cmd
 import slate.examples.common.{UserApi, User}
 

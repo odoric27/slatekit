@@ -8,7 +8,7 @@ permalink: /mod-shell
 
 |:--|:--|
 | **desc** | A simple command line shell interface you can hook into to run custom commands or apis | 
-| **date**| 2016-4-16 0:24:10 |
+| **date**| 2016-6-26 2:14:42 |
 | **version** | 0.9.1  |
 | **namespace** | slate.core.shell  |
 | **source** | slate.core.shell.ShellService  |
